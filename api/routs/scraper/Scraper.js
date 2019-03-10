@@ -7,7 +7,7 @@ module.exports = {//so we can call this scraping function from headline.js and s
   scrape: function(is_head)
   { 
     var json = [];
-    const request = require('request');
+    var request = require('request');
     const cheerio = require('cheerio');
 
     request('https://www.ynet.co.il/home/0,7340,L-8,00.html',(error, response, html) =>{
